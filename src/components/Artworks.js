@@ -21,7 +21,7 @@ function Artworks() {
     
     <div>
       <h1>Our Artworks:</h1>
-      <h2 id="learnmore">Click the pieces you'd like to learn more about.</h2>
+      <h3 id="learnmore">Click the pieces you'd like to learn more about.</h3>
       {artworks.map(data => (
         <h2 className="artworks" key={data.id}><em>
           <Link to={`artworks/${data.id}`}>
