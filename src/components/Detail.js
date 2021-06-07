@@ -19,7 +19,7 @@ function Detail({ match }) {
       setData(data);
       console.log(data);
   };
- 
+
   return (
     <div>
         <u>
@@ -29,8 +29,9 @@ function Detail({ match }) {
         <h3 id="origin">{data.data.place_of_origin}, {data.data.date_display}</h3>
         <h4 id="materials">{data.data.medium_display}</h4>
         <img id="image" src={`https://www.artic.edu/iiif/2/${data.data.image_id}/full/843,/0/default.jpg`} alt=""/> 
-        <br></br>      
+        <p></p>
         <Link to="/collection">Add to Collection</Link>
+        <p></p>
 
     </div>
   );

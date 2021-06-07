@@ -10,7 +10,7 @@ function Artworks() {
   const [artworks, setData] = useState([]); 
 
   const fetchData = async () => {
-    const data = await fetch('https://api.artic.edu/api/v1/artworks?limit=20')
+    const data = await fetch('https://api.artic.edu/api/v1/artworks?limit=50')
 
     const artworks = await data.json()
     console.log(artworks.data);
@@ -19,11 +19,14 @@ function Artworks() {
 
   return (
     
-    <div className="breh">
-      <h2 id="learnmore">Browse our collection:</h2>
+    <div>
+      <h1>Our Artworks:</h1>
+      <h2 id="learnmore">Click the pieces you'd like to learn more about.</h2>
       {artworks.map(data => (
         <h2 className="artworks" key={data.id}><em>
-          <Link to={`artworks/${data.id}`}>{data.title}</Link>
+          <Link to={`artworks/${data.id}`}>
+          <img id="image" src={`https://www.artic.edu/iiif/2/${data.image_id}/full/843,/0/default.jpg`} alt=""/>
+          </Link>
           </em>
           </h2>
       ))}

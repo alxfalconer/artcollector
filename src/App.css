@@ -7,7 +7,16 @@ nav{
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
-  background: rgb(73, 79, 82);
+  background: rgb(19, 20, 20);
+  color: white;
+}
+
+footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 7vh;
+  background: rgb(19, 20, 20);
   color: white;
 }
 
@@ -20,8 +29,18 @@ nav{
 }
 
 .logo{
+  height: 75px;
+  width: 75px;
+}
+
+.collector{
   height: 100px;
   width: 100px;
+}
+
+.collector2{
+  height: 400px;
+  width: 400px;
 }
 
 .image{
@@ -36,3 +55,10 @@ nav{
 .btn-primary{
   padding: 50px;
 }
+
+image{
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+

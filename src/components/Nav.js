@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from "./logo.png"
+import collector from "./collector.png"
 
 function Nav() {
 
@@ -10,12 +10,12 @@ function Nav() {
 
   return ( 
     <nav>
-      <a href="https://www.artic.edu/">
-      <h3><img className="logo" src={logo} alt="logo"/></h3>
+      <a href="/">
+      <h3><img className="collector" src={collector} alt="collector"/></h3>
       </a>
       <ul className="nav-links">
-        <Link style={navStyle} to="/">
-          <li>Home</li>
+        <Link style={navStyle} to="/premise">
+          <li>Premise</li>
         </Link>
         <Link style={navStyle} to="/artworks">
         <li>Our Artworks</li>

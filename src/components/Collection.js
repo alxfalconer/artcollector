@@ -1,11 +1,11 @@
 import React from 'react';
 
 function Collection() {
-  return (
+     return (
     <div>
-     <h1>My Collection</h1>
+     <h1>Your Collection</h1>
     </div>
-  );
-}
+   ); 
+  }
 
 export default Collection;
